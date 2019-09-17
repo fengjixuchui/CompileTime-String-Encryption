@@ -1,5 +1,5 @@
 # CompileTime-String-Encryption
-C++ 17 compile time string encryption supporting vs2010-2017. Rewrite and update of: https://github.com/stevemk14ebr/VS2013-Compile-Time-XOR
+C++ 17 compile time string encryption supporting vs2010-2019. Rewrite and update of: https://github.com/stevemk14ebr/VS2013-Compile-Time-XOR
 
 # Changelog compared to other repo
 - File parsing supports widechars, UTF-8 recommended
@@ -11,7 +11,7 @@ C++ 17 compile time string encryption supporting vs2010-2017. Rewrite and update
 - Xrefkiller removed, it was unstable.
 
 # Setup
-1) This hooks the compilers wsopen_s api at runtime using my polyhook library. The latest version of polyhook is included, you must build the capstone libs.
+1) This hooks the compilers wsopen_s api at runtime using my polyhook library. A (old, but known good) version of polyhook is included, you must build the capstone libs.
 2) Build this project
 3) Find you c1xx.dll in the visual studio installation directory. Use CFF explorer to add a new import address table entry for the dll built by this project
 4) Copy the correct versions of the capstone dll and the dll from this into the same directory as your c1xx.dll
